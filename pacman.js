@@ -14,10 +14,10 @@ function Run() {
   direction = checkPageBounds(direction, imgWidth, pos, pageWidth);
   img.src = pacArray[direction][focus];
   if (direction) {
-    pos -= 15;
+    pos -= 20;
     img.style.left = pos + "px";
   } else {
-    pos += 15;
+    pos += 20;
     img.style.left = pos + "px";
   }
 }

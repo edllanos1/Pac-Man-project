@@ -14,14 +14,14 @@ function Run() {
   direction = checkPageBounds(direction, imgWidth, pos, pageWidth);
   img.src = pacArray[direction][focus];
   if (direction) {
-    pos -= 20;
+    pos -= 15;
     img.style.left = pos + "px";
   } else {
-    pos += 20;
+    pos += 15;
     img.style.left = pos + "px";
   }
 }
-setInterval(Run, 50);
+setInterval(Run, 200);
 
 function checkPageBounds(direction, imgWidth, pos, pageWidth) {
   if (direction == 0 && pos + imgWidth > pageWidth) direction = 1;
